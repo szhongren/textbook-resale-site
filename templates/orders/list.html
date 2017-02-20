@@ -1,0 +1,51 @@
+{% extends 'common/base.html' %}
+
+{% block title %}Orders{% endblock %}
+
+{% block content %}
+
+{% load tz %}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a class="btn btn-primary" href="{% url 'orders:create' %}" role="button">Add New Order</a>
+    </div>
+    <div class="panel-body">
+    {% if order_list %}
+        <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            {% if user.is_admin %}
+            <th>User</th>
+            {% endif %}
+            <th>Percentage Paid</th>
+            <th>Commission</th>
+            <th>Date Submitted</th>
+            <th>Paid on</th>
+        </tr>
+        {% for order in order_list %}
+        <tr>
+            <td>
+                <a href="{% url 'orders:detail' order.pk %}">{{ forloop.counter }}</a>
+            </td>
+            {% if user.is_admin %}
+            <td>{{ order.account }}</td>
+            {% endif %}
+            <td>{{ order.percentage_to_buy }}</td>
+            <td>{{ order.commission }}</td>
+            {% localtime on %}
+            <td>{{ order.date_submitted }}</td>
+            <td>{{ order.date_paid }}</td>
+            {% endlocaltime %}
+        </tr>
+        {% endfor %}
+
+        </table>
+    {% else %}
+        <p>No orders are available.</p>
+    {% endif %}
+    </div>
+</div>
+
+{% endblock %}
+
+

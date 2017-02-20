@@ -1,0 +1,62 @@
+{% extends 'common/base.html' %}
+
+{% block title %}Search{% endblock %}
+
+{% block style %}
+img.img-rounded {
+    margin-top: 20px;
+}
+{% endblock %}
+
+{% block content %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <form action="" method="post">{% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Search" />
+        </form>
+    </div>
+
+    <div class="panel-body">
+        <div class="container-fluid">
+            {% if error %}
+            <div class="alert alert-danger col-lg-12 col-md-12 col-sm-12">
+                <center>
+                    <h1>{{ error }}</h1>
+                </center>
+            </div>
+            {% endif %}
+
+            {% if book %}
+            <div class="alert alert-success col-lg-12 col-md-12 col-sm-12">
+                <center>
+                    <h1>${{ book.buy_price }}</h1>
+                </center>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3, col-sm-12">
+                    <img src="{{ book.large_image_url }}" alt="cover" class="img-rounded" width="100%">
+                </div>
+                <div class="col-lg-9 col-md-9, col-sm-12">
+                    <h3>ISBN: {{ book.isbn }}</h3>
+                    <h3>Title: {{ book.title }}</h3>
+                    <h3>Author: {{ book.author }}</h3>
+                    {% if not error %}
+                    <h3>Format: {{ book.format }}</h3>
+                    <h3>Sales Rank: {{ book.sales_rank }}</h3>
+{% comment %}
+                    <h3>Has Trade In: {{ book.has_trade_in }}</h3>
+                    <h3>Amount to Pay Customer: {{ book.formatted_value }}</h3>
+{% endcomment %}
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

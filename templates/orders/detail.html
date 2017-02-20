@@ -1,0 +1,41 @@
+{% extends 'common/base.html' %}
+
+{% block title %}Transactions{% endblock %}
+
+{% block content %}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Transactions
+    </div>
+    <div class="panel-body">
+
+        <table class="table table-hover">
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Quantity</th>
+            <th>Subtotal Paid</th>
+            <th>Subtotal</th>
+        </tr>
+        {% for transaction in order_detail %}
+        <tr>
+            <td>
+                <a href="{% url 'books:detail' transaction.book.pk %}">{{ transaction.book.isbn }}</a>
+            </td>
+            <td>{{ transaction.book.title }}</td>
+            <td>{{ transaction.book.author }}</td>
+            <td>{{ transaction.quantity }}</td>
+            <td>${{ transaction.subtotal_paid }}</td>
+            <td>${{ transaction.subtotal }}</td>
+        </tr>
+        {% endfor %}
+
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}
+

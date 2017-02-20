@@ -1,0 +1,5 @@
+add subtotal + commission
+take out books page
+grand total = grand total to pay customer, grand total you will get
+total 1 = .8 * amazon price
+total 2 = (1 + commission) * total 1

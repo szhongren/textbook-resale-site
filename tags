@@ -1,0 +1,330 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCESS_KEY_ID	books/search.py	/^ACCESS_KEY_ID = "<amazon access key id>"$/;"	kind:variable	line:4
+ALLOWED_HOSTS	webapp/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+ASSOCIATE_TAG	books/search.py	/^ASSOCIATE_TAG = "<amazon associate tag>"$/;"	kind:variable	line:3
+AUTH_PASSWORD_VALIDATORS	webapp/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:101
+AUTH_USER_MODEL	webapp/settings.py	/^AUTH_USER_MODEL = 'accounts.Account'$/;"	kind:variable	line:93
+AboutView	common/views.py	/^class AboutView(generic.TemplateView):$/;"	kind:class	line:9
+Account	accounts/admin.py	/^from .models import Account$/;"	kind:namespace	line:7
+Account	accounts/models.py	/^class Account(AbstractBaseUser):$/;"	kind:class	line:39
+Account	orders/models.py	/^from accounts.models import Account$/;"	kind:namespace	line:3
+Account	orders/views.py	/^from accounts.models import Account$/;"	kind:namespace	line:12
+AccountAdmin	accounts/admin.py	/^class AccountAdmin(BaseUserAdmin):$/;"	kind:class	line:55
+AccountChangeForm	accounts/admin.py	/^class AccountChangeForm(forms.ModelForm):$/;"	kind:class	line:37
+AccountCreationForm	accounts/admin.py	/^class AccountCreationForm(forms.ModelForm):$/;"	kind:class	line:10
+AccountManager	accounts/models.py	/^class AccountManager(BaseUserManager):$/;"	kind:class	line:6
+AccountsConfig	accounts/apps.py	/^class AccountsConfig(AppConfig):$/;"	kind:class	line:4
+AmazonAPI	books/search.py	/^from amazon.api import AmazonAPI$/;"	kind:namespace	line:1
+AppConfig	accounts/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	books/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	common/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	orders/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+BASE_DIR	webapp/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+BaseUserAdmin	accounts/admin.py	/^from django.contrib.auth.admin import UserAdmin as BaseUserAdmin$/;"	kind:namespace	line:4
+Book	books/admin.py	/^from .models import Book$/;"	kind:namespace	line:2
+Book	books/forms.py	/^from .models import Book$/;"	kind:namespace	line:2
+Book	books/models.py	/^class Book(models.Model):$/;"	kind:class	line:5
+Book	books/views.py	/^from .models import Book, BookTemplate$/;"	kind:namespace	line:3
+Book	orders/models.py	/^from books.models import Book$/;"	kind:namespace	line:2
+Book	orders/views.py	/^from books.models import Book, BookTemplate$/;"	kind:namespace	line:11
+BookSearchView	books/views.py	/^class BookSearchView(generic.TemplateView, generic.edit.FormMixin):$/;"	kind:class	line:13
+BookTemplate	books/models.py	/^class BookTemplate(Book):$/;"	kind:class	line:16
+BookTemplate	books/views.py	/^from .models import Book, BookTemplate$/;"	kind:namespace	line:3
+BookTemplate	orders/views.py	/^from books.models import Book, BookTemplate$/;"	kind:namespace	line:11
+BookView	books/views.py	/^class BookView(generic.DetailView):$/;"	kind:class	line:9
+BooksConfig	books/apps.py	/^class BooksConfig(AppConfig):$/;"	kind:class	line:4
+CRISPY_TEMPLATE_PACK	webapp/settings.py	/^CRISPY_TEMPLATE_PACK = 'bootstrap3'$/;"	kind:variable	line:51
+CommonConfig	common/apps.py	/^class CommonConfig(AppConfig):$/;"	kind:class	line:4
+DATABASES	webapp/settings.py	/^DATABASES = {$/;"	kind:variable	line:86
+DEBUG	webapp/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+Decimal	books/models.py	/^from decimal import Decimal, ROUND_DOWN$/;"	kind:namespace	line:2
+Decimal	orders/views.py	/^from decimal import Decimal, ROUND_DOWN$/;"	kind:namespace	line:14
+EMAIL_HOST	webapp/settings.py	/^EMAIL_HOST = '<email smtp host>'$/;"	kind:variable	line:30
+EMAIL_HOST_PASSWORD	webapp/settings.py	/^EMAIL_HOST_PASSWORD = '<email password>'$/;"	kind:variable	line:32
+EMAIL_HOST_USER	orders/views.py	/^from webapp.settings import TIME_ZONE, EMAIL_HOST_USER$/;"	kind:namespace	line:8
+EMAIL_HOST_USER	webapp/settings.py	/^EMAIL_HOST_USER = '<email user>'$/;"	kind:variable	line:31
+EMAIL_PORT	webapp/settings.py	/^EMAIL_PORT = 587$/;"	kind:variable	line:33
+EMAIL_USE_TLS	webapp/settings.py	/^EMAIL_USE_TLS = True$/;"	kind:variable	line:34
+EmailMultiAlternatives	orders/views.py	/^from django.core.mail import EmailMultiAlternatives$/;"	kind:namespace	line:5
+FormView	accounts/views.py	/^from django.views.generic import TemplateView, View, FormView$/;"	kind:namespace	line:2
+Group	accounts/admin.py	/^from django.contrib.auth.models import Group$/;"	kind:namespace	line:3
+HomePageView	common/views.py	/^class HomePageView(generic.TemplateView):$/;"	kind:class	line:6
+HttpResponse	accounts/views.py	/^from django.http.response import HttpResponse, HttpResponseRedirect$/;"	kind:namespace	line:3
+HttpResponseRedirect	accounts/views.py	/^from django.http.response import HttpResponse, HttpResponseRedirect$/;"	kind:namespace	line:3
+INSTALLED_APPS	webapp/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:38
+ISBN	books/forms.py	/^    ISBN = forms.CharField(max_length=20)$/;"	kind:variable	line:5
+ISBN	orders/forms.py	/^    ISBN = forms.CharField(max_length=20)$/;"	kind:variable	line:5
+ISBNSearch	books/search.py	/^def ISBNSearch(ISBN):$/;"	kind:function	line:7
+ISBNSearch	books/views.py	/^from .search import ISBNSearch$/;"	kind:namespace	line:6
+ISBNSearch	orders/views.py	/^from books.search import ISBNSearch$/;"	kind:namespace	line:9
+LANGUAGE_CODE	webapp/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:123
+LOGIN_REDIRECT_URL	webapp/settings.py	/^LOGIN_REDIRECT_URL = '\/orders\/'$/;"	kind:variable	line:94
+LOGIN_URL	webapp/settings.py	/^LOGIN_URL = '\/accounts\/login\/'$/;"	kind:variable	line:95
+LOGOUT_REDIRECT_URL	webapp/settings.py	/^LOGOUT_REDIRECT_URL = '\/books\/' # user url pattern names here instead when I get it$/;"	kind:variable	line:96
+LoginForm	accounts/forms.py	/^class LoginForm(forms.Form):$/;"	kind:class	line:3
+LoginForm	accounts/views.py	/^from .forms import LoginForm$/;"	kind:namespace	line:5
+LoginRequiredMixin	orders/views.py	/^from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin$/;"	kind:namespace	line:3
+LoginView	accounts/views.py	/^class LoginView(FormView):$/;"	kind:class	line:8
+LogoutView	accounts/views.py	/^class LogoutView(View):$/;"	kind:class	line:42
+MEDIA_ROOT	webapp/settings.py	/^MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media_cdn')$/;"	kind:variable	line:144
+MEDIA_URL	webapp/settings.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:143
+MIDDLEWARE	webapp/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:53
+Meta	accounts/admin.py	/^    class Meta:$/;"	kind:class	line:16
+Meta	accounts/admin.py	/^    class Meta:$/;"	kind:class	line:44
+Order	orders/admin.py	/^from .models import Order, Transaction$/;"	kind:namespace	line:2
+Order	orders/forms.py	/^from .models import Order, Transaction$/;"	kind:namespace	line:2
+Order	orders/models.py	/^class Order(models.Model):$/;"	kind:class	line:6
+Order	orders/views.py	/^from .models import Order, Transaction$/;"	kind:namespace	line:6
+OrderConfirmView	orders/views.py	/^class OrderConfirmView(LoginRequiredMixin, generic.TemplateView):$/;"	kind:class	line:126
+OrderCreateForm	orders/forms.py	/^class OrderCreateForm(forms.Form):$/;"	kind:class	line:4
+OrderCreateForm	orders/views.py	/^from .forms import OrderCreateForm$/;"	kind:namespace	line:7
+OrderCreateView	orders/views.py	/^class OrderCreateView(LoginRequiredMixin, generic.TemplateView, generic.edit.FormMixin):$/;"	kind:class	line:42
+OrderDetailView	orders/views.py	/^class OrderDetailView(UserPassesTestMixin, LoginRequiredMixin, generic.ListView): # detailview with list mixin or iistview with detail mixin$/;"	kind:class	line:28
+OrderListView	orders/views.py	/^class OrderListView(LoginRequiredMixin, generic.ListView):$/;"	kind:class	line:17
+OrdersConfig	orders/apps.py	/^class OrdersConfig(AppConfig):$/;"	kind:class	line:4
+Quantity	orders/forms.py	/^    Quantity = forms.IntegerField()$/;"	kind:variable	line:6
+REQUIRED_FIELDS	accounts/models.py	/^    REQUIRED_FIELDS = ['name']$/;"	kind:variable	line:54
+ROOT_URLCONF	webapp/settings.py	/^ROOT_URLCONF = 'webapp.urls'$/;"	kind:variable	line:62
+ROUND_DOWN	books/models.py	/^from decimal import Decimal, ROUND_DOWN$/;"	kind:namespace	line:2
+ROUND_DOWN	orders/views.py	/^from decimal import Decimal, ROUND_DOWN$/;"	kind:namespace	line:14
+ReadOnlyPasswordHashField	accounts/admin.py	/^from django.contrib.auth.forms import ReadOnlyPasswordHashField$/;"	kind:namespace	line:5
+SECRET_ACCESS_KEY	books/search.py	/^SECRET_ACCESS_KEY = "<amazon secret access key>"$/;"	kind:variable	line:5
+SECRET_KEY	webapp/settings.py	/^SECRET_KEY = '<secret key>'$/;"	kind:variable	line:23
+SESSION_ENGINE	webapp/settings.py	/^SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'$/;"	kind:variable	line:116
+SESSION_EXPIRE_AT_BROWSER_CLOSE	webapp/settings.py	/^SESSION_EXPIRE_AT_BROWSER_CLOSE = True$/;"	kind:variable	line:117
+SESSION_SERIALIZER	webapp/settings.py	/^SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'$/;"	kind:variable	line:118
+STATICFILES_DIRS	webapp/settings.py	/^STATICFILES_DIRS = [$/;"	kind:variable	line:139
+STATIC_ROOT	webapp/settings.py	/^STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')$/;"	kind:variable	line:137
+STATIC_URL	webapp/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:138
+SearchForm	books/forms.py	/^class SearchForm(forms.Form):$/;"	kind:class	line:4
+SearchForm	books/views.py	/^from .forms import SearchForm$/;"	kind:namespace	line:4
+TEMPLATES	webapp/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:64
+TIME_ZONE	orders/views.py	/^from webapp.settings import TIME_ZONE, EMAIL_HOST_USER$/;"	kind:namespace	line:8
+TIME_ZONE	webapp/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:125
+TemplateView	accounts/views.py	/^from django.views.generic import TemplateView, View, FormView$/;"	kind:namespace	line:2
+TestCase	accounts/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	books/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	common/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	orders/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+Transaction	orders/admin.py	/^from .models import Order, Transaction$/;"	kind:namespace	line:2
+Transaction	orders/forms.py	/^from .models import Order, Transaction$/;"	kind:namespace	line:2
+Transaction	orders/models.py	/^class Transaction(models.Model):$/;"	kind:class	line:18
+Transaction	orders/views.py	/^from .models import Order, Transaction$/;"	kind:namespace	line:6
+USERNAME_FIELD	accounts/models.py	/^    USERNAME_FIELD = 'email'$/;"	kind:variable	line:53
+USE_I18N	webapp/settings.py	/^USE_I18N = True$/;"	kind:variable	line:127
+USE_L10N	webapp/settings.py	/^USE_L10N = True$/;"	kind:variable	line:129
+USE_TZ	webapp/settings.py	/^USE_TZ = True$/;"	kind:variable	line:131
+UserPassesTestMixin	orders/views.py	/^from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin$/;"	kind:namespace	line:3
+View	accounts/views.py	/^from django.views.generic import TemplateView, View, FormView$/;"	kind:namespace	line:2
+WSGI_APPLICATION	webapp/settings.py	/^WSGI_APPLICATION = 'webapp.wsgi.application'$/;"	kind:variable	line:80
+__init__	books/models.py	/^    def __init__(self, book):$/;"	kind:member	line:22
+__init__.py	accounts/__init__.py	1;"	kind:file	line:1
+__init__.py	books/__init__.py	1;"	kind:file	line:1
+__init__.py	common/__init__.py	1;"	kind:file	line:1
+__init__.py	orders/__init__.py	1;"	kind:file	line:1
+__init__.py	webapp/__init__.py	1;"	kind:file	line:1
+__str__	accounts/models.py	/^    def __str__(self):              # __unicode__ on Python 2$/;"	kind:member	line:64
+__str__	books/models.py	/^    def __str__(self):$/;"	kind:member	line:13
+__str__	orders/models.py	/^    def __str__(self):$/;"	kind:member	line:15
+__str__	orders/models.py	/^    def __str__(self):$/;"	kind:member	line:27
+account	orders/models.py	/^    account = models.ForeignKey(Account, on_delete=models.CASCADE)$/;"	kind:variable	line:7
+add_fieldsets	accounts/admin.py	/^    add_fieldsets = ($/;"	kind:variable	line:72
+add_form	accounts/admin.py	/^    add_form = AccountCreationForm$/;"	kind:variable	line:58
+admin	accounts/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:2
+admin	books/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	common/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	orders/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	webapp/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin.py	accounts/admin.py	1;"	kind:file	line:1
+admin.py	books/admin.py	1;"	kind:file	line:1
+admin.py	common/admin.py	1;"	kind:file	line:1
+admin.py	orders/admin.py	1;"	kind:file	line:1
+app_name	accounts/urls.py	/^app_name = 'accounts'$/;"	kind:variable	line:4
+app_name	books/urls.py	/^app_name = 'books'$/;"	kind:variable	line:4
+app_name	common/urls.py	/^app_name = 'common'$/;"	kind:variable	line:4
+app_name	orders/urls.py	/^app_name = 'orders'$/;"	kind:variable	line:4
+application	webapp/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	accounts/apps.py	1;"	kind:file	line:1
+apps.py	books/apps.py	1;"	kind:file	line:1
+apps.py	common/apps.py	1;"	kind:file	line:1
+apps.py	orders/apps.py	1;"	kind:file	line:1
+as_book	books/models.py	/^    def as_book(self):$/;"	kind:member	line:36
+authenticate	accounts/views.py	/^from django.contrib.auth import login, authenticate, logout$/;"	kind:namespace	line:4
+author	books/models.py	/^    author = models.CharField(max_length=255)$/;"	kind:variable	line:7
+book	orders/models.py	/^    book = models.ForeignKey(Book, on_delete=models.CASCADE)$/;"	kind:variable	line:20
+books_bought	orders/models.py	/^    books_bought = models.ManyToManyField(Book, through='Transaction')$/;"	kind:variable	line:8
+canonical	books/views.py	/^from isbnlib import is_isbn10, is_isbn13, canonical$/;"	kind:namespace	line:5
+canonical	orders/views.py	/^from isbnlib import is_isbn10, is_isbn13, canonical$/;"	kind:namespace	line:13
+clean_password	accounts/admin.py	/^    def clean_password(self):$/;"	kind:member	line:48
+clean_password2	accounts/admin.py	/^    def clean_password2(self):$/;"	kind:member	line:20
+commission	orders/models.py	/^    commission = models.DecimalField(decimal_places=4, max_digits=5)$/;"	kind:variable	line:9
+context_object_name	orders/views.py	/^    context_object_name = 'order_detail'$/;"	kind:variable	line:31
+context_object_name	orders/views.py	/^    context_object_name = 'order_list'$/;"	kind:variable	line:20
+context_object_name	orders/views.py	/^    context_object_name = 'transactions'$/;"	kind:variable	line:128
+context_object_name	orders/views.py	/^    context_object_name = 'transactions'$/;"	kind:variable	line:44
+create_superuser	accounts/models.py	/^    def create_superuser(self, email, name, password):$/;"	kind:member	line:23
+create_user	accounts/models.py	/^    def create_user(self, email, name, password=None):$/;"	kind:member	line:7
+date_paid	orders/models.py	/^    date_paid = models.DateTimeField(blank=True, null=True)$/;"	kind:variable	line:12
+date_submitted	orders/models.py	/^    date_submitted = models.DateTimeField()$/;"	kind:variable	line:11
+default_commission	accounts/models.py	/^    default_commission = models.DecimalField(decimal_places=4, max_digits=5, default=0.2)$/;"	kind:variable	line:45
+default_percentage_to_buy	accounts/models.py	/^    default_percentage_to_buy = models.DecimalField(decimal_places=4, max_digits=5, default=0.8)$/;"	kind:variable	line:46
+django	manage.py	/^            import django$/;"	kind:namespace	line:14
+email	accounts/forms.py	/^    email = forms.CharField()$/;"	kind:variable	line:4
+email	accounts/models.py	/^    email = models.EmailField($/;"	kind:variable	line:40
+execute_from_command_line	manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:8
+fields	accounts/admin.py	/^        fields = ('email', 'name', 'default_commission', 'default_percentage_to_buy')$/;"	kind:variable	line:18
+fields	accounts/admin.py	/^        fields = ('email', 'password', 'name', 'default_commission', 'default_percentage_to_buy')$/;"	kind:variable	line:46
+fieldsets	accounts/admin.py	/^    fieldsets = ($/;"	kind:variable	line:65
+filter_horizontal	accounts/admin.py	/^    filter_horizontal = ()$/;"	kind:variable	line:80
+form	accounts/admin.py	/^    form = AccountChangeForm$/;"	kind:variable	line:57
+form_class	accounts/views.py	/^    form_class = LoginForm$/;"	kind:variable	line:9
+form_class	books/views.py	/^    form_class = SearchForm$/;"	kind:variable	line:15
+form_class	orders/views.py	/^    form_class = OrderCreateForm$/;"	kind:variable	line:45
+format	books/models.py	/^    format = None$/;"	kind:variable	line:17
+formatted_value	books/models.py	/^    formatted_value = ''$/;"	kind:variable	line:20
+forms	accounts/admin.py	/^from django import forms$/;"	kind:namespace	line:1
+forms	accounts/forms.py	/^from django import forms$/;"	kind:namespace	line:1
+forms	books/forms.py	/^from django import forms$/;"	kind:namespace	line:1
+forms	orders/forms.py	/^from django import forms$/;"	kind:namespace	line:1
+forms.py	accounts/forms.py	1;"	kind:file	line:1
+forms.py	books/forms.py	1;"	kind:file	line:1
+forms.py	orders/forms.py	1;"	kind:file	line:1
+generic	books/views.py	/^from django.views import generic$/;"	kind:namespace	line:1
+generic	common/views.py	/^from django.views import generic$/;"	kind:namespace	line:2
+generic	orders/views.py	/^from django.views import generic$/;"	kind:namespace	line:1
+get	accounts/views.py	/^    def get(self, request):$/;"	kind:member	line:12
+get	accounts/views.py	/^    def get(self, request):$/;"	kind:member	line:43
+get	books/views.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:17
+get	orders/views.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:130
+get	orders/views.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:47
+get_books_with_isbn	books/views.py	/^def get_books_with_isbn(isbn_raw):$/;"	kind:function	line:43
+get_full_name	accounts/models.py	/^    def get_full_name(self):$/;"	kind:member	line:56
+get_queryset	orders/views.py	/^    def get_queryset(self):$/;"	kind:member	line:22
+get_queryset	orders/views.py	/^    def get_queryset(self):$/;"	kind:member	line:38
+get_short_name	accounts/models.py	/^    def get_short_name(self):$/;"	kind:member	line:60
+get_tradeable_books	books/views.py	/^def get_tradeable_books(isbn_raw):$/;"	kind:function	line:39
+get_tradeable_books	orders/views.py	/^from books.views import get_tradeable_books$/;"	kind:namespace	line:10
+get_wsgi_application	webapp/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+has_module_perms	accounts/models.py	/^    def has_module_perms(self, app_label):$/;"	kind:member	line:72
+has_perm	accounts/models.py	/^    def has_perm(self, perm, obj=None):$/;"	kind:member	line:67
+has_trade_in	books/models.py	/^    has_trade_in = False$/;"	kind:variable	line:18
+include	webapp/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
+is_active	accounts/models.py	/^    is_active = models.BooleanField(default=True)$/;"	kind:variable	line:48
+is_admin	accounts/models.py	/^    is_admin = models.BooleanField(default=False)$/;"	kind:variable	line:49
+is_isbn10	books/views.py	/^from isbnlib import is_isbn10, is_isbn13, canonical$/;"	kind:namespace	line:5
+is_isbn10	orders/views.py	/^from isbnlib import is_isbn10, is_isbn13, canonical$/;"	kind:namespace	line:13
+is_isbn13	books/views.py	/^from isbnlib import is_isbn10, is_isbn13, canonical$/;"	kind:namespace	line:5
+is_isbn13	orders/views.py	/^from isbnlib import is_isbn10, is_isbn13, canonical$/;"	kind:namespace	line:13
+is_staff	accounts/models.py	/^    def is_staff(self):$/;"	kind:member	line:78
+isbn	books/models.py	/^    isbn = models.CharField(max_length=20, unique=True, primary_key=True)$/;"	kind:variable	line:6
+large_image_url	books/models.py	/^    large_image_url = models.CharField(max_length=255)$/;"	kind:variable	line:10
+list_display	accounts/admin.py	/^    list_display = ('email', 'name', 'default_commission', 'default_percentage_to_buy', 'is_admin')$/;"	kind:variable	line:63
+list_filter	accounts/admin.py	/^    list_filter = ('is_admin',)$/;"	kind:variable	line:64
+login	accounts/views.py	/^from django.contrib.auth import login, authenticate, logout$/;"	kind:namespace	line:4
+logout	accounts/views.py	/^from django.contrib.auth import login, authenticate, logout$/;"	kind:namespace	line:4
+manage.py	manage.py	1;"	kind:file	line:1
+max_length	accounts/models.py	/^        max_length=255,$/;"	kind:variable	line:42
+medium_image_url	books/models.py	/^    medium_image_url = models.CharField(max_length=255)$/;"	kind:variable	line:9
+model	accounts/admin.py	/^        model = Account$/;"	kind:variable	line:17
+model	accounts/admin.py	/^        model = Account$/;"	kind:variable	line:45
+model	books/views.py	/^    model = Book$/;"	kind:variable	line:10
+model	orders/views.py	/^    model = Order$/;"	kind:variable	line:18
+model	orders/views.py	/^    model = Transaction$/;"	kind:variable	line:29
+models	accounts/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	books/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	common/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	orders/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models.py	accounts/models.py	1;"	kind:file	line:1
+models.py	books/models.py	1;"	kind:file	line:1
+models.py	common/models.py	1;"	kind:file	line:1
+models.py	orders/models.py	1;"	kind:file	line:1
+name	accounts/apps.py	/^    name = 'accounts'$/;"	kind:variable	line:5
+name	accounts/models.py	/^    name = models.CharField(max_length=255)$/;"	kind:variable	line:47
+name	books/apps.py	/^    name = 'books'$/;"	kind:variable	line:5
+name	common/apps.py	/^    name = 'common'$/;"	kind:variable	line:5
+name	orders/apps.py	/^    name = 'orders'$/;"	kind:variable	line:5
+notes	orders/models.py	/^    notes = models.CharField(max_length=100, blank=True, null=True)$/;"	kind:variable	line:13
+notes	orders/models.py	/^    notes = models.CharField(max_length=100, blank=True, null=True)$/;"	kind:variable	line:25
+objects	accounts/models.py	/^    objects = AccountManager()$/;"	kind:variable	line:51
+order	orders/models.py	/^    order = models.ForeignKey(Order, on_delete=models.CASCADE)$/;"	kind:variable	line:19
+order_cancel	orders/views.py	/^    def order_cancel(self, request, *args, **kwargs):$/;"	kind:member	line:117
+ordering	accounts/admin.py	/^    ordering = ('email',)$/;"	kind:variable	line:79
+os	manage.py	/^import os$/;"	kind:namespace	line:2
+os	webapp/settings.py	/^import os$/;"	kind:namespace	line:13
+os	webapp/wsgi.py	/^import os$/;"	kind:namespace	line:10
+password	accounts/admin.py	/^    password = ReadOnlyPasswordHashField()$/;"	kind:variable	line:42
+password	accounts/forms.py	/^    password = forms.CharField(widget=forms.PasswordInput)$/;"	kind:variable	line:5
+password1	accounts/admin.py	/^    password1 = forms.CharField(label='Password', widget=forms.PasswordInput)$/;"	kind:variable	line:13
+password2	accounts/admin.py	/^    password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)$/;"	kind:variable	line:14
+percentage_to_buy	orders/models.py	/^    percentage_to_buy = models.DecimalField(decimal_places=4, max_digits=5)$/;"	kind:variable	line:10
+post	accounts/views.py	/^    def post(self, request):$/;"	kind:member	line:20
+post	books/views.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:22
+post	orders/views.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:140
+post	orders/views.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:66
+price_when_submitted	orders/models.py	/^    price_when_submitted = models.DecimalField(decimal_places=2, max_digits=10)$/;"	kind:variable	line:24
+quantity	orders/models.py	/^    quantity = models.IntegerField()$/;"	kind:variable	line:23
+redirect	orders/views.py	/^from django.shortcuts import render, redirect$/;"	kind:namespace	line:2
+render	accounts/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+render	books/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:2
+render	common/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
+render	orders/views.py	/^from django.shortcuts import render, redirect$/;"	kind:namespace	line:2
+sales_rank	books/models.py	/^    sales_rank = models.IntegerField()$/;"	kind:variable	line:11
+save	accounts/admin.py	/^    def save(self, commit=True):$/;"	kind:member	line:28
+search.py	books/search.py	1;"	kind:file	line:1
+search_fields	accounts/admin.py	/^    search_fields = ('email',)$/;"	kind:variable	line:78
+settings.py	webapp/settings.py	1;"	kind:file	line:1
+subtotal	orders/models.py	/^    subtotal = models.DecimalField(decimal_places=2, max_digits=10)$/;"	kind:variable	line:21
+subtotal_paid	orders/models.py	/^    subtotal_paid = models.DecimalField(decimal_places=2, max_digits=10)$/;"	kind:variable	line:22
+sys	manage.py	/^import sys$/;"	kind:namespace	line:3
+template_name	accounts/views.py	/^    template_name = 'accounts\/login.html'$/;"	kind:variable	line:10
+template_name	books/views.py	/^    template_name = 'books\/detail.html'$/;"	kind:variable	line:11
+template_name	books/views.py	/^    template_name = 'books\/search.html'$/;"	kind:variable	line:14
+template_name	common/views.py	/^    template_name = 'common\/about.html'$/;"	kind:variable	line:10
+template_name	common/views.py	/^    template_name = 'common\/homepage.html'$/;"	kind:variable	line:7
+template_name	orders/views.py	/^    template_name = 'orders\/confirm.html'$/;"	kind:variable	line:127
+template_name	orders/views.py	/^    template_name = 'orders\/create.html'$/;"	kind:variable	line:43
+template_name	orders/views.py	/^    template_name = 'orders\/detail.html'$/;"	kind:variable	line:30
+template_name	orders/views.py	/^    template_name = 'orders\/list.html'$/;"	kind:variable	line:19
+test_func	orders/views.py	/^    def test_func(self):$/;"	kind:member	line:33
+tests.py	accounts/tests.py	1;"	kind:file	line:1
+tests.py	books/tests.py	1;"	kind:file	line:1
+tests.py	common/tests.py	1;"	kind:file	line:1
+tests.py	orders/tests.py	1;"	kind:file	line:1
+timezone	orders/views.py	/^from django.utils import timezone$/;"	kind:namespace	line:4
+title	books/models.py	/^    title = models.CharField(max_length=255)$/;"	kind:variable	line:8
+trade_in_value	books/models.py	/^    trade_in_value = 0$/;"	kind:variable	line:19
+transaction_add	orders/views.py	/^    def transaction_add(self, request, *args, **kwargs):$/;"	kind:member	line:120
+transaction_delete	orders/views.py	/^    def transaction_delete(self, request, *args, **kwargs):$/;"	kind:member	line:123
+transaction_subtotal	orders/views.py	/^def transaction_subtotal(new_order, book, quantity):$/;"	kind:function	line:178
+transaction_subtotal_paid	orders/views.py	/^def transaction_subtotal_paid(new_order, book, quantity):$/;"	kind:function	line:183
+unique	accounts/models.py	/^        unique=True,$/;"	kind:variable	line:43
+url	accounts/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
+url	books/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
+url	common/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
+url	orders/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
+url	webapp/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
+urlpatterns	accounts/urls.py	/^urlpatterns = [$/;"	kind:variable	line:6
+urlpatterns	books/urls.py	/^urlpatterns = [$/;"	kind:variable	line:6
+urlpatterns	common/urls.py	/^urlpatterns = [$/;"	kind:variable	line:6
+urlpatterns	orders/urls.py	/^urlpatterns = [$/;"	kind:variable	line:6
+urlpatterns	webapp/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urls.py	accounts/urls.py	1;"	kind:file	line:1
+urls.py	books/urls.py	1;"	kind:file	line:1
+urls.py	common/urls.py	1;"	kind:file	line:1
+urls.py	orders/urls.py	1;"	kind:file	line:1
+urls.py	webapp/urls.py	1;"	kind:file	line:1
+verbose_name	accounts/models.py	/^        verbose_name='email address',$/;"	kind:variable	line:41
+views	accounts/urls.py	/^from . import views$/;"	kind:namespace	line:2
+views	books/urls.py	/^from . import views$/;"	kind:namespace	line:2
+views	common/urls.py	/^from . import views$/;"	kind:namespace	line:2
+views	orders/urls.py	/^from . import views$/;"	kind:namespace	line:2
+views.py	accounts/views.py	1;"	kind:file	line:1
+views.py	books/views.py	1;"	kind:file	line:1
+views.py	common/views.py	1;"	kind:file	line:1
+views.py	orders/views.py	1;"	kind:file	line:1
+wsgi.py	webapp/wsgi.py	1;"	kind:file	line:1
